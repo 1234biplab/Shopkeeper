@@ -1,0 +1,16 @@
+{% extends 'base.html'%}
+
+{% block title %}<title>Confirm Delete</title> {% endblock%}
+
+{% block content%}
+
+
+<div class="container">
+
+    <h1 class="text-center"> Are you want to sure delete?</h1>
+<form method="post">
+    {% csrf_token %}
+    <input  type="submit" value="Confirm" class="button">
+</form>
+</div>
+{% endblock%}
